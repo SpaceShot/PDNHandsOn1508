@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Problem Solver</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-1.10.2.min.js"></script>
+    <script src="Scripts/jquery.signalR-2.1.2.min.js"></script>
+    <script src="signalr/hubs"></script>
+    <script src="Scripts/index.js"></script>
+</head>
+<body>
+    <h1>Hello()</h1>
+    <input type="button" id="callHello" value="Call Hello() on the hub" />
+
+    <h1>Problem Quiz</h1>
+    <p>
+        <span id="instructions">To Join, Enter your User Name and Click Join</span><br />
+        User:&nbsp;<input type="text" id="name" />&nbsp;<input type="button" id="join" value="Join"/>
+    </p>
+    <p>
+        <input type="text" id="operand1" disabled />
+        &nbsp;+&nbsp;
+        <input type="text" id="operand2" disabled />
+        &nbsp;=&nbsp;
+        <input type="text" id="answer" disabled />
+    </p>
+    <p>
+        <input type="button" id="solve" value="Solve!" disabled/>
+        &nbsp;<span id="correct"></span>
+    </p>
+    <h2>Other People's Solutions</h2>
+    <ul id="solutions"></ul>
+
+    <h4>Connection Information</h4>
+    <p>
+        <span id="transportInfo"></span>
+        <ul id="connectionInfo"></ul>
+    </p>
+</body>
+</html>
